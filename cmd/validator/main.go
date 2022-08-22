@@ -12,6 +12,7 @@ func main() {
 	config := &sendpulse.Config{
 		UserID: "",
 		Secret: "",
+		Rps:    2000,
 	}
 	client := sendpulse.NewClient(http.DefaultClient, config)
 
